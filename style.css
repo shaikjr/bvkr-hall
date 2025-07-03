@@ -1,0 +1,231 @@
+:root {
+  --dl-color-gray-500: #595959;
+  --dl-color-gray-700: #999999;
+  --dl-color-gray-800: #595959;
+  --dl-color-gray-900: #D9D9D9;
+  --dl-size-size-large: 144px;
+  --dl-size-size-small: 48px;
+  --dl-color-danger-300: #A22020;
+  --dl-color-danger-500: #BF2626;
+  --dl-color-danger-700: #E14747;
+  --dl-color-gray-black: #000000;
+  --dl-color-gray-white: #FFFFFF;
+  --dl-size-size-medium: 96px;
+  --dl-size-size-xlarge: 192px;
+  --dl-size-size-xsmall: 16px;
+  --dl-space-space-unit: 16px;
+  --dl-color-primary-100: #003EB3;
+  --dl-color-primary-300: #0074F0;
+  --dl-color-primary-500: #14A9FF;
+  --dl-color-primary-700: #85DCFF;
+  --dl-color-success-300: #199033;
+  --dl-color-success-500: #32A94C;
+  --dl-color-success-700: #4CC366;
+  --dl-size-size-xxlarge: 288px;
+  --dl-size-size-maxwidth: 1400px;
+  --dl-radius-radius-round: 50%;
+  --dl-space-space-halfunit: 8px;
+  --dl-space-space-sixunits: 96px;
+  --dl-space-space-twounits: 32px;
+  --dl-color-primary1-blue60: #e2ddf5ff;
+  --dl-radius-radius-radius2: 2px;
+  --dl-radius-radius-radius4: 4px;
+  --dl-radius-radius-radius8: 8px;
+  --dl-space-space-fiveunits: 80px;
+  --dl-space-space-fourunits: 64px;
+  --dl-color-primary1-blue100: #291477ff;
+  --dl-space-space-threeunits: 48px;
+  --dl-color-secondary-gray500: #d9d9d9ff;
+  --dl-space-space-oneandhalfunits: 24px;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: #fff;
+}
+
+.container {
+  background: var(--dl-color-gray-white);
+  padding: 40px;
+  max-width: 600px;
+  margin: 60px auto;
+  border-radius: var(--dl-radius-radius-radius8);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container h4 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 24px;
+  color: var(--dl-color-primary1-blue100);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background: var(--dl-color-gray-white);
+  border: 1px solid var(--dl-color-gray-500);
+  border-radius: var(--dl-radius-radius-radius4);
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: var(--dl-color-gray-black);
+  transition: border 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--dl-color-primary-500);
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+input[type="submit"] {
+  background-color: var(--dl-color-primary-500);
+  color: var(--dl-color-gray-white);
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: var(--dl-radius-radius-radius4);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--dl-color-primary-300);
+}
+
+.button, .input, .textarea {
+  font-family: inherit;
+}
+
+.whatsapp-popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  background-color: #25d366;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.whatsapp-popup span {
+  margin-right: 10px;
+  color: #fff;
+}
+
+.whatsapp-popup img {
+  width: 30px;
+}
+
+.whatsapp-popup a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.whatsapp-popup:hover {
+  background-color: #128c7e;
+}
+
+.home-navbar-interactive {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo-and-menu {
+  display: flex;
+  align-items: center;
+}
+
+.home-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.home-links span {
+  margin-left: 119px;
+}
+
+h1.home-hero-heading {
+  color: #ffd972;
+}
+
+.home-header {
+  background-image: url('banner2.jpeg');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+div.home-hero1 {
+  background-color: transparent;
+}
+
+span.home-hero-sub-heading {
+  color: #000;
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.home-navbar-interactive {
+  background-color: transparent !important;
+}
+
+/* Mobile Styles */
+@media(max-width: 479px) {
+  .heading2 {
+    font-size: 1.8rem;
+  }
+  .heading1 {
+    font-size: 2.5rem;
+  }
+  .heading3 {
+    font-size: 1.1rem;
+  }
+  .heading4 {
+    font-size: 1.2rem;
+  }
+  .home-logo {
+    width: 100px;
+    height: auto;
+  }
+  h1.heading1 {
+    font-size: 1em;
+  }
+  span.home-details-sub-heading {
+    font-size: 0.80em;
+  }
+  img.home-details-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+  img.home-logo {
+    width: 130px;
+  }
+}
