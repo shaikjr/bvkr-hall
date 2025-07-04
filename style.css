@@ -2,25 +2,25 @@
   --dl-color-gray-500: #595959;
   --dl-color-gray-700: #999999;
   --dl-color-gray-800: #595959;
-  --dl-color-gray-900: #D9D9D9;
+  --dl-color-gray-900: #d9d9d9;
   --dl-size-size-large: 144px;
   --dl-size-size-small: 48px;
-  --dl-color-danger-300: #A22020;
-  --dl-color-danger-500: #BF2626;
-  --dl-color-danger-700: #E14747;
+  --dl-color-danger-300: #a22020;
+  --dl-color-danger-500: #bf2626;
+  --dl-color-danger-700: #e14747;
   --dl-color-gray-black: #000000;
-  --dl-color-gray-white: #FFFFFF;
+  --dl-color-gray-white: #ffffff;
   --dl-size-size-medium: 96px;
   --dl-size-size-xlarge: 192px;
   --dl-size-size-xsmall: 16px;
   --dl-space-space-unit: 16px;
-  --dl-color-primary-100: #003EB3;
-  --dl-color-primary-300: #0074F0;
-  --dl-color-primary-500: #14A9FF;
-  --dl-color-primary-700: #85DCFF;
+  --dl-color-primary-100: #003eb3;
+  --dl-color-primary-300: #0074f0;
+  --dl-color-primary-500: #14a9ff;
+  --dl-color-primary-700: #85dcff;
   --dl-color-success-300: #199033;
-  --dl-color-success-500: #32A94C;
-  --dl-color-success-700: #4CC366;
+  --dl-color-success-500: #32a94c;
+  --dl-color-success-700: #4cc366;
   --dl-size-size-xxlarge: 288px;
   --dl-size-size-maxwidth: 1400px;
   --dl-radius-radius-round: 50%;
@@ -45,7 +45,11 @@ body {
   margin: 0;
   padding: 0;
 }
-
+.home-logo {
+  width: 150px; /* Adjust as needed */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: contain;
+}
 p {
   color: #fff;
 }
@@ -111,7 +115,9 @@ input[type="submit"]:hover {
   background-color: var(--dl-color-primary-300);
 }
 
-.button, .input, .textarea {
+.button,
+.input,
+.textarea {
   font-family: inherit;
 }
 
@@ -175,7 +181,7 @@ h1.home-hero-heading {
 }
 
 .home-header {
-  background-image: url('banner2.jpeg');
+  background-image: url("banner2.jpeg");
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -197,7 +203,7 @@ span.home-hero-sub-heading {
 }
 
 /* Mobile Styles */
-@media(max-width: 479px) {
+@media (max-width: 479px) {
   .heading2 {
     font-size: 1.8rem;
   }
@@ -210,22 +216,18 @@ span.home-hero-sub-heading {
   .heading4 {
     font-size: 1.2rem;
   }
-  .home-logo {
-    width: 100px;
-    height: auto;
+  img.home-logo {
+    width: 110px;
   }
   h1.heading1 {
     font-size: 1em;
   }
   span.home-details-sub-heading {
-    font-size: 0.80em;
+    font-size: 0.8em;
   }
   img.home-details-image {
     width: 300px;
     height: 300px;
     object-fit: cover;
-  }
-  img.home-logo {
-    width: 130px;
   }
 }
